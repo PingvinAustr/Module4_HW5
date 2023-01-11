@@ -12,9 +12,9 @@ namespace Module4_HW5.Models
         public string Name { get; set; }
         public double Budget { get; set; }
         public DateTime StartedDate { get; set; }
-        public List<EmployeeProject>? EmployeeProject { get; set; }
+        public virtual List<EmployeeProject>? EmployeeProject { get; set; }
             = new List<EmployeeProject>();
         public int ClientId { get; set; }
-        public Client Client { get; set; }
+        public virtual Client Client { get; set; }
     }
 }
